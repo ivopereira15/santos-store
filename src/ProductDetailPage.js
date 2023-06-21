@@ -58,13 +58,9 @@ export default function ProductDetailPage() {
      
           <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            {/* Product */}
             <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
-              {/* Image gallery */}
               <Tab.Group as="div" className="flex flex-col-reverse">
-
                 <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
-              
                     <Tab.Panel >
                       <img
                       src={product.image} alt={product.name} 
