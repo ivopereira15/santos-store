@@ -1,0 +1,26 @@
+.product{
+    border: 2px solid black;
+    height: 400px;
+   
+}
+img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: 50px;
+}
+
+.goback{
+    background-color: grey;
+    width: 100px;
+    margin-left: 10px;
+  }
+
+   .goback:hover {
+    --tw-bg-opacity: 1;
+    background-color: grey;
+    opacity: .50;
+}
+
+  
+  

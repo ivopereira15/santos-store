@@ -1,0 +1,23 @@
+.product-mini-cart{
+    display: inline;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.product-name{
+
+    margin: 0;
+    display: inline;
+    float: left;
+}
+
+
+
+.remove-mini-cart{
+    width: 100%;
+    justify-content: right;
+}
+
+.results{
+    width: 100%;
+}

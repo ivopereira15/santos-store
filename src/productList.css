@@ -1,0 +1,13 @@
+
+.gobackCategories{
+    background-color: grey;
+    width: 130px;
+    margin-bottom: 10px;
+
+  }
+
+   .gobackCategories:hover {
+    --tw-bg-opacity: 1;
+    background-color: grey;
+    opacity: .50;
+}
