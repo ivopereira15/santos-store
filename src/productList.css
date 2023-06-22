@@ -6,7 +6,7 @@
 
   }
 
-   .gobackCategories:hover {
+.gobackCategories:hover {
     --tw-bg-opacity: 1;
     background-color: grey;
     opacity: .50;

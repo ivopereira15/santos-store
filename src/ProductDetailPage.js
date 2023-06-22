@@ -36,13 +36,11 @@ export default function ProductDetailPage() {
       const addToCart = async () => {
        
         const productToAdd = state.products.find(pdt => pdt.id === product.id);
-        console.log(productToAdd)
         if(productToAdd === undefined){
           const newProduct = product;
           newProduct.quantity = Number(1);
           dispatch({type: 'ADD_TO_CART', payload: newProduct });
         } else {         
-          console.log(productToAdd)
           productToAdd.quantity = Number(productToAdd.quantity) + Number(1); 
           dispatch({type: 'EDIT_CART', payload: productToAdd });
         }

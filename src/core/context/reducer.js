@@ -13,7 +13,7 @@ const Reducer = (state, action) => {
     case 'DELETE_PRODUCT':
       return {
         ...state,
-        todos: state.products.filter(product => product.id !== action.payload)
+        products: state.products.filter(product => product.id !== action.payload)
       };
     default:
       return state;

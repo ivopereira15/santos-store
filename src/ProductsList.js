@@ -35,7 +35,7 @@ export default function ProductsList() {
    
     return (
       <>
-      <div className="container">
+      <div className="container" key="products">
        <button
           onClick={() => navigate(-1)}
             
@@ -44,9 +44,10 @@ export default function ProductsList() {
             Go to Categories
         </button>
         <section aria-labelledby="product-heading" className="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
-          <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
+          <div key="productsList" className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
               {products.filter(cat=> cat.category === slug).map((product) => {
-                return <Product product={product} />;
+                return  <div
+                key={product.id}> <Product product={product} /></div>;
               })}
           </div>
     </section>
