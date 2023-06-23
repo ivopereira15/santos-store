@@ -15,7 +15,7 @@ export default function Cart() {
         state.products.map((product)=> {
             return total += product.price * product.quantity;
         });
-        return total;
+        return total.toFixed(2);
     };
 
     const NoResults = () => (
@@ -98,7 +98,7 @@ export default function Cart() {
             <dl className="mt-6 space-y-4">
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                 <dt className="text-base font-medium text-gray-900">Order total</dt>
-                <p>${calculateTotal()}</p>
+                <p>€{calculateTotal()}</p>
               </div>
             </dl>
 
